@@ -1,0 +1,30 @@
+1.SCMs là gì?
+
+SCM (Quản lý mã nguồn) là hệ thống hoặc công cụ giúp theo dõi, quản lý các thay đổi trong mã nguồn phần mềm. Nó giúp nhiều người làm việc trên cùng một dự án mà không gây xung đột, hỗ trợ kiểm soát phiên bản, sao lưu và khôi phục dữ liệu khi cần. Ví dụ về SCM: Git, SVN, Mercurial.
+
+2.VCS là gì?
+VCS (Version Control System) là gì?
+VCS (Hệ thống kiểm soát phiên bản) là một loại SCM chuyên dùng để theo dõi sự thay đổi của mã nguồn theo thời gian. VCS giúp lưu lại lịch sử thay đổi, hỗ trợ làm việc nhóm hiệu quả. Có hai loại VCS chính:
+
+Centralized VCS (CVCS - Hệ thống kiểm soát phiên bản tập trung): Mọi mã nguồn được lưu trên một máy chủ trung tâm (ví dụ: SVN).
+
+Distributed VCS (DVCS - Hệ thống kiểm soát phiên bản phân tán): Mỗi máy tính đều có bản sao của toàn bộ kho chứa (ví dụ: Git, Mercurial).
+
+3.Git là gì?
+
+Git là một hệ thống kiểm soát phiên bản phân tán phổ biến nhất hiện nay. Nó giúp theo dõi thay đổi mã nguồn, hỗ trợ làm việc nhóm, cho phép người dùng tạo nhánh, quản lý phiên bản và khôi phục dữ liệu khi cần. Git được phát triển bởi Linus Torvalds vào năm 2005.
+
+4.Các định nghĩa cơ bản về Git và thứ tự để commit một file README.md lên Git repository
+
+Repository: Kho chứa mã nguồn.
+Commit: Lưu lại thay đổi với một thông điệp mô tả.
+Branch: Nhánh phát triển độc lập trong Git.
+Merge: Gộp các nhánh lại với nhau.
+Remote: Kho chứa Git trên máy chủ (GitHub, GitLab, Bitbucket).
+Clone: Sao chép một repository từ remote về máy.
+Pull: Lấy thay đổi mới nhất từ remote repository về local.
+Push: Đẩy thay đổi từ local lên remote repository.
+
+5.HTML là gì?
+
+HTML (HyperText Markup Language) là ngôn ngữ đánh dấu được sử dụng để tạo cấu trúc cho các trang web. HTML bao gồm các thẻ (tags) để định nghĩa các phần tử như văn bản, hình ảnh, liên kết, bảng, biểu mẫu, v.v. Nó là nền tảng của mọi trang web và thường kết hợp với CSS và JavaScript để tạo ra giao diện đẹp và tương tác tốt hơn.
