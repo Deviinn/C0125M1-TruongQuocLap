@@ -33,5 +33,5 @@ BEGIN
     OUTPUT max  // Hiển thị giá trị lớn nhất
 END
 5.Thuật toán cấu trúc điều kiện
-ddd
+ddd1234
 	
