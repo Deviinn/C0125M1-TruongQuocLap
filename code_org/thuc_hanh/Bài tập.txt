@@ -21,14 +21,12 @@ Begin
 end
 4.Mô tả thuật toán tìm giá trị lớn nhất trong một dãy số 
 BEGIN
-    INPUT N  // Nhập số lượng phần tử trong dãy số
-    INPUT a1  // Nhập phần tử đầu tiên
-    max ← a1  // Giả sử max là phần tử đầu tiên
+    INPUT N  
+    INPUT a1    
 
     FOR i FROM 2 TO N DO
-        INPUT ai  // Nhập phần tử tiếp theo
-        IF ai > max THEN
-            max ← ai  // Cập nhật max nếu ai lớn hơn max
+        INPUT ai  
+        IF ai > max THEN  
         END IF
     END FOR
 
