@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn Cờ Vua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        .board {
+            border: 20px solid orange;
+            display: grid;
+            grid-template-columns: 40px repeat(8, 50px);
+            grid-template-rows: 40px repeat(8, 50px);
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .header, .side {
+            background-color: orange;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="board">
+    <!-- Ô trống góc -->
+    <div class="cell header"></div>
+
+    <!-- Hàng số (1-8) -->
+    <script>
+        for (let i = 1; i <= 8; i++) {
+            document.write(`<div class="cell header">${i}</div>`);
+        }
+        for (let i = 0; i < 8; i++) {
+            // Cột chữ cái (A-H)
+            document.write(`<div class="cell side">${String.fromCharCode(65 + i)}</div>`);
+            for (let j = 0; j < 8; j++) {
+                let color = (i + j) % 2 === 0 ? "white" : "black";
+                document.write(`<div class="cell ${color}"></div>`);
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>

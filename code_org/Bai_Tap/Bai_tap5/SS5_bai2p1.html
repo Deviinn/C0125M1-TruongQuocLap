@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở Thích Của Bạn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightcyan;
+        }
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            margin: auto;
+            text-align: center;
+        }
+        .header {
+            background: orange;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        label {
+            font-size: 16px;
+            color: blue;
+        }
+        .hobby-label {
+            color: orange;
+            font-size: 14px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 90%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">SỞ THÍCH CỦA BẠN</div>
+    <form id="hobbyForm">
+        <label for="yourname">Họ và tên</label><br>
+        <input type="text" id="yourname" name="yourname"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label>Sở thích</label><br>
+        <input type="checkbox" name="hobby" value="Thể thao"> <span class="hobby-label">Thể thao</span>
+        <input type="checkbox" name="hobby" value="Âm nhạc"> <span class="hobby-label">Âm nhạc</span>
+        <input type="checkbox" name="hobby" value="Đọc sách"> <span class="hobby-label">Đọc sách</span><br>
+        
+        <input type="checkbox" name="hobby" value="Lướt web"> <span class="hobby-label">Lướt web</span>
+        <input type="checkbox" name="hobby" value="Chơi game"> <span class="hobby-label">Chơi game</span>
+        <input type="checkbox" name="hobby" value="Điện ảnh"> <span class="hobby-label">Điện ảnh</span><br>
+        
+        <input type="checkbox" name="hobby" value="Du lịch"> <span class="hobby-label">Du lịch</span><br>
+
+        <div class="buttons">
+            <button type="submit">Gửi thông tin</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
