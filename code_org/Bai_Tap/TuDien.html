@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ điển Anh - Việt</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      input {
+        padding: 8px;
+        width: 200px;
+        margin: 10px;
+      }
+      button {
+        padding: 8px 15px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Từ điển Anh - Việt</h2>
+    <input type="text" id="wordInput" placeholder="Nhập từ tiếng Anh" />
+    <button onclick="translate()">Dịch</button>
+    <p id="result"></p>
+
+    <script>
+      let englishWords = ["hello", "goodbye", "apple", "banana", "dog", "cat"];
+      let vietnameseWords = [
+        "xin chào",
+        "tạm biệt",
+        "táo",
+        "chuối",
+        "chó",
+        "mèo",
+      ];
+
+      function translate() {
+        let inputWord = document
+          .getElementById("wordInput")
+          .value.toLowerCase();
+        let index = englishWords.indexOf(inputWord);
+
+        if (index !== -1) {
+          document.getElementById("result").innerText =
+            "Nghĩa: " + vietnameseWords[index];
+        } else {
+          document.getElementById("result").innerText = "Không tìm thấy!";
+        }
+      }
+    </script>
+  </body>
+</html>

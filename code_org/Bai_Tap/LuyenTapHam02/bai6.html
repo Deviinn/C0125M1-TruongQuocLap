@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isPositiveInteger(n) {
+        return Number.isInteger(n) && n > 0;
+      }
+
+      console.log(
+        "Số 10 có phải số nguyên dương không?",
+        isPositiveInteger(10)
+      );
+      console.log(
+        "Số -5 có phải số nguyên dương không?",
+        isPositiveInteger(-5)
+      );
+    </script>
+  </body>
+</html>

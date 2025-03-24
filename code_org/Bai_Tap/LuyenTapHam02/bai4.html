@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isDigit(char) {
+        return !isNaN(char) && char.trim() !== "";
+      }
+
+      console.log("Ký tự '5' có phải số không?", isDigit("5"));
+      console.log("Ký tự 'a' có phải số không?", isDigit("a"));
+    </script>
+  </body>
+</html>

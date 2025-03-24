@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function printRectangle(width, height) {
+        let result = "";
+
+        for (let i = 0; i < height; i++) {
+          if (i === 0 || i === height - 1) {
+            result += "*".repeat(width) + "\n";
+          } else {
+            result += "*" + " ".repeat(width - 2) + "*\n";
+          }
+        }
+
+        console.log(result);
+      }
+
+      let width = parseInt(prompt("Nhập chiều rộng:"));
+      let height = parseInt(prompt("Nhập chiều cao:"));
+
+      printRectangle(width, height);
+    </script>
+  </body>
+</html>

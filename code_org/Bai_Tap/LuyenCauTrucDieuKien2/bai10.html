@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let consumption = parseFloat(prompt("Nhập số kWh tiêu thụ:"));
+      let price = 0;
+
+      if (consumption <= 50) {
+        price = consumption * 1.678;
+      } else if (consumption <= 100) {
+        price = 50 * 1.678 + (consumption - 50) * 1.734;
+      } else {
+        price = 50 * 1.678 + 50 * 1.734 + (consumption - 100) * 2.014;
+      }
+
+      console.log(`Tiền điện phải trả: ${price} VND`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "12 -5 3 -10 0 4 -2";
+      let numbers = str.split(" ").map(Number);
+      let count = 0;
+
+      for (let num of numbers) {
+        if (num < 0) count++;
+      }
+
+      console.log(`Có ${count} số nguyên âm trong chuỗi.`);
+    </script>
+  </body>
+</html>

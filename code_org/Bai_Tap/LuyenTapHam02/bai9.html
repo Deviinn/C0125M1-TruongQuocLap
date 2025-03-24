@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function countCharacterOccurrences(arr, char) {
+        let count = arr.filter((c) => c === char).length;
+        return count > 0 ? count : -1;
+      }
+
+      console.log(
+        "Số lần xuất hiện của 'a' trong ['a', 'b', 'a', 'c']:",
+        countCharacterOccurrences(["a", "b", "a", "c"], "a")
+      );
+      console.log(
+        "Số lần xuất hiện của 'd' trong ['a', 'b', 'c']:",
+        countCharacterOccurrences(["a", "b", "c"], "d")
+      );
+    </script>
+  </body>
+</html>

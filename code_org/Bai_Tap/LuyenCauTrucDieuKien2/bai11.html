@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let income = parseFloat(prompt("Nhập thu nhập hàng tháng (triệu VND):"));
+      let tax = 0;
+
+      if (income <= 5) {
+        tax = income * 0.05;
+      } else if (income <= 10) {
+        tax = income * 0.1;
+      } else {
+        tax = income * 0.2;
+      }
+
+      console.log(`Thuế thu nhập cá nhân phải trả: ${tax} triệu VND`);
+    </script>
+  </body>
+</html>

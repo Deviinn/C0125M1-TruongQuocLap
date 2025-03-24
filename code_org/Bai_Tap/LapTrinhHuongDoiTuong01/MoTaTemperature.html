@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Temperature {
+        constructor(celsius) {
+          if (celsius < -273.15) {
+            throw new Error(
+              "Nhiệt độ không thể nhỏ hơn -273.15°C (độ 0 tuyệt đối)."
+            );
+          }
+          this.celsius = celsius;
+        }
+
+        // Chuyển đổi từ Celsius sang Fahrenheit
+        toFahrenheit() {
+          return (this.celsius * 9) / 5 + 32;
+        }
+
+        // Chuyển đổi từ Celsius sang Kelvin
+        toKelvin() {
+          return this.celsius + 273.15;
+        }
+
+        // Hiển thị thông tin nhiệt độ
+        display() {
+          console.log(`Nhiệt độ: ${this.celsius}°C`);
+          console.log(`Fahrenheit: ${this.toFahrenheit()}°F`);
+          console.log(`Kelvin: ${this.toKelvin()}K`);
+        }
+      }
+
+      // Khởi tạo đối tượng Temperature với nhiệt độ 25°C
+      let temp = new Temperature(25);
+
+      // Hiển thị nhiệt độ theo các đơn vị khác nhau
+      temp.display();
+    </script>
+  </body>
+</html>

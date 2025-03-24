@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Nhập số dòng của tam giác:"));
+
+      console.log("Tam giác vuông góc dưới bên trái:");
+      for (let i = 1; i <= n; i++) {
+        console.log("*".repeat(i));
+      }
+
+      console.log("Tam giác vuông góc trên bên trái:");
+      for (let i = n; i >= 1; i--) {
+        console.log("*".repeat(i));
+      }
+
+      console.log("Tam giác vuông góc dưới bên phải:");
+      for (let i = 1; i <= n; i++) {
+        console.log(" ".repeat(n - i) + "*".repeat(i));
+      }
+
+      console.log("Tam giác vuông góc trên bên phải:");
+      for (let i = n; i >= 1; i--) {
+        console.log(" ".repeat(n - i) + "*".repeat(i));
+      }
+    </script>
+  </body>
+</html>
