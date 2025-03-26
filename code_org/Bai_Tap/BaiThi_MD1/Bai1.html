@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function nhapMangVaTinhToan() {
+        let mangSoNguyen = [];
+
+        while (mangSoNguyen.length < 50) {
+          let input = prompt(
+            `Nhập số nguyên thứ ${
+              mangSoNguyen.length + 1
+            } (hoặc nhập 'exit' để dừng):`
+          );
+          if (input.toLowerCase() === "exit") break;
+
+          let so = Number(input);
+          if (!isNaN(so)) {
+            mangSoNguyen.push(so);
+          } else {
+            console.log("Vui lòng nhập một số nguyên hợp lệ!");
+          }
+        }
+
+        console.log("Mảng đã nhập:", mangSoNguyen);
+        let soChiaHetCho3 = mangSoNguyen.filter((so) => so % 3 === 0);
+
+        if (soChiaHetCho3.length === 0) {
+          console.log("Không có số nào chia hết cho 3 trong mảng.");
+          return;
+        }
+        let trungBinhCong =
+          soChiaHetCho3.reduce((tong, so) => tong + so, 0) /
+          soChiaHetCho3.length;
+
+        console.log("Trung bình cộng các số chia hết cho 3:", trungBinhCong);
+      }
+      nhapMangVaTinhToan();
+    </script>
+  </body>
+</html>

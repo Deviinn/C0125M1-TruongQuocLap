@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kiemTraNamNhuan(nam) {
+        return (nam % 4 === 0 && nam % 100 !== 0) || nam % 400 === 0;
+      }
+
+      function tinhSoNgay(thang, nam) {
+        let soNgay;
+        if (thang === 2) {
+          soNgay = kiemTraNamNhuan(nam) ? 29 : 28;
+        } else if (thang === 4 || thang === 6 || thang === 9 || thang === 11) {
+          soNgay = 30;
+        } else {
+          soNgay = 31;
+        }
+        return soNgay;
+      }
+      let nhapLieu = prompt("Nhập tháng/năm (MM/yyyy):");
+      let tachChuoi = nhapLieu.split("/");
+
+      if (tachChuoi.length === 2) {
+        let thang = parseInt(tachChuoi[0]);
+        let nam = parseInt(tachChuoi[1]);
+
+        if (
+          !isNaN(thang) &&
+          !isNaN(nam) &&
+          thang >= 1 &&
+          thang <= 12 &&
+          nam > 0
+        ) {
+          console.log(
+            `Tháng ${thang}/${nam} có ${tinhSoNgay(thang, nam)} ngày.`
+          );
+        } else {
+          console.log("Dữ liệu nhập không hợp lệ.");
+        }
+      } else {
+        console.log("Định dạng nhập không hợp lệ. Vui lòng nhập theo MM/yyyy.");
+      }
+    </script>
+  </body>
+</html>
